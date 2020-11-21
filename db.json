@@ -1,0 +1,158 @@
+{
+  "list": [
+    {
+      "name": "Three.js",
+      "id": 1,
+      "category": "plugin"
+    },
+    {
+      "name": "Pug",
+      "id": 2,
+      "category": "templates"
+    },
+    {
+      "name": "Vue",
+      "id": 3,
+      "category": "framework"
+    },
+    {
+      "name": "Joomla!",
+      "id": 4,
+      "category": "crm"
+    },
+    {
+      "name": "Scss",
+      "id":5,
+      "category": "preprocessor"
+    },
+    {
+      "name": "Wordpress",
+      "id": 6,
+      "category": "crm"
+    },
+    {
+      "name": "HTML",
+      "id": 7,
+      "category": "lang"
+    },
+    {
+      "name": "Git",
+      "id":8,
+      "category": "control"
+    },
+    {
+      "name": "Fullpage.js",
+      "id": 9,
+      "category": "plugin"
+    },
+    {
+      "name": "Less",
+      "id": 10,
+      "category": "preprocessor"
+    },
+    {
+      "name": "Opencart",
+      "id": 11,
+      "category": "crm"
+    },
+    {
+      "name": "Css",
+      "id": 12,
+      "category": "lang"
+    },
+    {
+      "name": "phpStorm",
+      "id": 13,
+      "category": "ide"
+    },
+    {
+      "name": "Owl-carousel.js",
+      "id": 14,
+      "category": "plugin"
+    },
+    {
+      "name": "npm",
+      "id": 15,
+      "category": "taskManagers"
+    },
+    {
+      "name": "webpack",
+      "id": 16,
+      "category": "compiler"
+    },
+    {
+      "name": "JS",
+      "id": 17,
+      "category": "lang"
+    },
+    {
+      "name": "jQuery",
+      "id": 18,
+      "category": "framework"
+    },
+    {
+      "name": "Slick.js",
+      "id": 19,
+      "category": "plugin"
+    },
+    {
+      "name": "Firebase",
+      "id": 20,
+      "category": "base"
+    },
+    {
+      "name": "Photoshop",
+      "id": 21,
+      "category": "ide"
+    },
+    {
+      "name": "Isotop.js",
+      "id": 22,
+      "category": "plugin"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Esit Украина",
+      "description": "Официальный дистрибьютор весового оборудования",
+      "img": "img/esit.png",
+      "link": "https://esit.com.ua",
+      "text": "Проект реализован по заказу консалтинговой компании Consult Marketing. Сайт является полноценным интернет-магазином и основан на CRM-системе WordPress. В нем разработаны, помимо статических страниц, - каталог, карточки товаров, корзина и оформление заказов. Сайт адаптирован под мобильные устройства."
+    },
+    {
+      "name": "Весовые решения",
+      "description": "Производитель весового оборудования",
+      "img": "img/vagovi.png",
+      "link": "https://vagovi.com.ua",
+      "text": "Проект реализован по заказу консалтинговой компании Consult Marketing. Сайт является каталогом товаров и основан на CRM-системе Opencart. В нем разработаны, помимо статических страниц, - каталог и карточки товаров. Сайт адаптирован под мобильные устройства."
+    },
+    {
+      "name": "Cable Shop",
+      "description": "Сайт был разработан, когда я работала в web-студии",
+      "img": "img/cableshop.png",
+      "link": "https://cable-shop.com.ua",
+      "text": "Проект реализован в рамках работы верстальщиком в веб-студии. Сайт является полноценным интернет-магазином и основан на CRM-системе Joomla!. Моей задачей была верстка статических страниц, каталога, карточки товаров, корзина и оформление заказов по PSD-макету. Сайт адаптирован под мобильные устройства."
+    },
+    {
+      "name": "Consult marketing",
+      "description": "Маркетинговое агенство",
+      "img": "img/consult.png",
+      "link": "https://consult.marketing",
+      "text": "Сайт создан по заказу консалтинговой компании Consult Marketing и основан на CRM-системе Joomla!. В нем реализована анимация загрузки страницы и popup-окна без каких-либо плагинов и модулей - только JS и jQuery. Сайт адаптирован под мобильные устройства."
+    },
+    {
+      "name": "Аркодан",
+      "description": "Энергосберегающие решения для промышленных объектов",
+      "img": "img/arkodan.png",
+      "link": "https://arkodan.ua",
+      "text": "Сайт реализован по заказу консалтинговой компании Consult Marketing и основан на CRM-системе Joomla!. За основу взят плагин FullPage.js. Интересно, что в проекте есть функциональная форма, написанная с помощью Ajax.js и PHP. Она принимает данные, выводит (без перезагрузки страницы) сообщение пользователю об успешной операции, обрабатывает данные и отправляет их в определенном виде на электронную почту менеджеру, например. Сайт адаптирован под мобильные устройства."
+    },
+    {
+      "name": "99",
+      "description": "Барбершоп",
+      "img": "img/99.png",
+      "link": "http://thebarbershop.com.ua/",
+      "text": "Проект реализован по заказу консалтинговой компании Consult Marketing. Сайт является визиткой барбершопа и основан на CRM-системе Joomla!. Сайт адаптирован под мобильные устройства."
+    }
+  ]
+}
