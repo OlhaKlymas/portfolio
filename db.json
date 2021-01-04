@@ -111,20 +111,57 @@
       "category": "plugin"
     }
   ],
+  
   "option": {
     "getFilterData": [
-      {"Все": "function () {return true;}"},
-      {"Основные языки": "function (el) {return el.category === `lang`}"},
-      {"Шаблонизатор": "function (el) {return el.category === `templates`}"},
-      {"Компилятор": "function (el) {return el.category === `compiler`}"},
-      {"Диспетчер задач": "function (el) {return el.category === `taskManagers`}"},
-      {"CRM": "function (el) {return el.category === `crm`}"},
-      {"Среда разработки": "function (el) {return el.category === `ide`}"},
-      {"Плагин JS": "function (el) {return el.category === `plugin`}"},
-      {"Фраймворк JS": "function (el) {return el.category === `framework`}"},
-      {"Препроцессоры CSS": "function (el) {return el.category === `preprocessor`}"},
-      {"Система контроля версий": "function (el) {return el.category === `control`}"},
-      {"База данных": "function (el) {return el.category === `base`}"}
+      { 
+        "name": "Все",
+        "fn": "function () {return true;}"
+      },
+      {
+        "name": "Основные языки",
+        "fn": "function (el) {return el.category === `lang`}"
+      },
+      {
+        "name": "Шаблонизатор",
+        "fn": "function (el) {return el.category === `templates`}"
+      },
+      {
+        "name": "Компилятор",
+        "fn": "function (el) {return el.category === `compiler`}"
+      },
+      {
+        "name": "Диспетчер задач",
+        "fn": "function (el) {return el.category === `taskManagers`}"
+      },
+      {
+        "name": "CRM",
+        "fn": "function (el) {return el.category === `crm`}"
+      },
+      {
+        "name": "Среда разработки",
+        "fn": "function (el) {return el.category === `ide`}"
+      },
+      {
+        "name": "Плагин JS",
+        "fn": "function (el) {return el.category === `plugin`}"
+      },
+      {
+        "name": "Фраймворк JS",
+        "fn": "function (el) {return el.category === `framework`}"
+      },
+      {
+        "name": "Препроцессоры CSS",
+        "fn": "function (el) {return el.category === `preprocessor`}"
+      },
+      {
+        "name": "Система контроля версий",
+        "fn": "function (el) {return el.category === `control`}"
+      },
+      {
+        "name": "База данных",
+        "fn": "function (el) {return el.category === `base`}"
+      }
     ]
   },
   "projects": [
