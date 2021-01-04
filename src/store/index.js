@@ -6,13 +6,22 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    list: [],
+    isLoaded: false,
+    isError: false,
+    knowledgeList: [],
     projects: [],
-    project:[]
+    project: [],
+    currency: {}
   },
   mutations: {
-    SET_LIST_TO_STATE: (state, list)=>{
-      state.list = list
+    SET_IS_LOADED: (state, isLoaded) => {
+      state.isLoaded = isLoaded
+    },
+    SET_IS_ERROR: (state, isError) => {
+      state.isError = isError
+    },
+    SET_KNOWLEDGE_LIST_TO_STATE: (state, knowledgeList)=>{
+      state.knowledgeList = knowledgeList
     },
     SET_PROJECTS_TO_STATE: (state, projects)=>{
       state.projects = projects
@@ -20,52 +29,79 @@ export default new Vuex.Store({
     SET_PROJECT: (state, project)=>{
       state.project = project
     },
+    SET_CURRENCY_TO_STATE: (state, currency)=>{
+      state.currency = currency
+    },
   },
   actions: {
-    GET_LIST_FROM_API({commit}){
+    GET_KNOWLEDGE_LIST_FROM_API({commit}){
+      commit("SET_IS_LOADED", true)
       return axios(`https://my-json-server.typicode.com/OlhaKlymas/portfolio/list`, {
         method: "GET"
-      }).then((list)=>{
-        commit("SET_LIST_TO_STATE", list.data);
-        return list
-      })
-      .catch((error)=>{
+      }).then((knowledgeList)=>{
+        commit("SET_KNOWLEDGE_LIST_TO_STATE", knowledgeList.data);
+        commit("SET_IS_LOADED", false)
+        return knowledgeList
+      }).catch((error)=>{
+        commit("SET_IS_LOADED", false)
+        commit("SET_IS_ERROR", true)
         console.log(error)
         return error
       })
     },
     GET_PROJECTS_FROM_API({commit}){
+      commit("SET_IS_LOADED", true)
       return axios(`https://my-json-server.typicode.com/OlhaKlymas/portfolio/projects`, {
         method: "GET"
       }).then((projects)=>{
         commit("SET_PROJECTS_TO_STATE", projects.data);
+        commit("SET_IS_LOADED", false)
         return projects
+      }).catch((error)=>{
+        commit("SET_IS_LOADED", false)
+        commit("SET_IS_ERROR", true)
+        console.log(error)
+        return error
       })
-          .catch((error)=>{
-            console.log(error)
-            return error
-          })
+    },
+    GET_CURRENCY_FROM_API({commit}){
+      commit("SET_IS_LOADED", true)
+      const key = process.env.VUE_APP_FIXER
+      return axios(`http://data.fixer.io/api/latest?access_key=${key}&symbols=USD,EUR,UAH`, {
+        method: "GET"
+      }).then((currency)=>{
+        commit("SET_CURRENCY_TO_STATE", currency.data);
+        commit("SET_IS_LOADED", false)
+        return currency
+      }).catch((error)=>{
+        commit("SET_IS_LOADED", false)
+        commit("SET_IS_ERROR", true)
+        console.log(error)
+        return error
+      })
     },
     GET_PROJECT({commit}, project){
       commit('SET_PROJECT', project)
-    },
-    async fetchCurrency () {
-      const key = process.env.VUE_APP_FIXER
-      const res = await fetch(`http://data.fixer.io/api/latest?access_key=${key}&symbols=USD,EUR,UAH`)
-      return await res.json()
     }
   },
   getters:{
-    LIST(state){
-      return state.list;
+    IS_LOADED(state){
+      return state.isLoaded;
+    },
+    IS_ERROR(state){
+      return state.isError;
+    },
+    KNOWLEDGE_LIST(state){
+      return state.knowledgeList;
     },
     PROJECTS(state){
       return state.projects;
     },
     PROJECT(state){
       return state.project;
+    },
+    CURRENCY(state){
+      return state.currency;
     }
-  },
-  modules: {
   }
 })

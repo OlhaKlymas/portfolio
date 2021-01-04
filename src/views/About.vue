@@ -1,6 +1,7 @@
 <template>
   <section class="loader">
-    <Loader v-if="loading"/>
+    <Loader v-if="IS_LOADED"/>
+    <Error v-else-if="IS_ERROR"/>
     <div v-else class="about">
       <div class="about__description">
         <div class="about__text">
@@ -42,6 +43,8 @@
 
 <script>
 import Loader from '@/components/Loader'
+import Error from '@/components/Error'
+import {mapActions, mapGetters} from 'vuex'
 export default {
   name: "About",
   data:() => ({
@@ -50,21 +53,26 @@ export default {
     start: new Date(2017, 6, 1),
     currencies: ['EUR', 'USD', 'UAH'],
     wage: 500,
-    currency: {},
-    amount: null,
-    loading: true
+    amount: null
   }),
-  methods:{
-    onChange(event){
-      return this.amount = (this.currency.rates[event.target.value] * this.wage).toFixed(0)
-    }
-  },
-  async mounted () {
-    setTimeout(()=>this.loading = false, 500)
-    return this.currency = await this.$store.dispatch('fetchCurrency')
-  },
   components:{
-    Loader
+    Loader, Error
+  },
+  computed:{
+    ...mapGetters([
+      "IS_LOADED", "IS_ERROR", "CURRENCY"
+    ])
+  },
+  mounted () {
+    this.GET_CURRENCY_FROM_API()
+  },
+  methods:{
+    ...mapActions([
+      "GET_CURRENCY_FROM_API"
+    ]),
+    onChange(event){
+      return this.amount = (this.CURRENCY.rates[event.target.value] * this.wage).toFixed(0)
+    }
   }
 }
 </script>
