@@ -1,6 +1,6 @@
 {
   "option": {
-    "getFilterData": {
+    "getFilterData": [
       {"Все": "function () {return true;}"},
       {"Основные языки": "function (el) {return el.category === `lang`}"},
       {"Шаблонизатор": "function (el) {return el.category === `templates`}"},
@@ -13,7 +13,7 @@
       {"Препроцессоры CSS": "function (el) {return el.category === `preprocessor`}"},
       {"Система контроля версий": "function (el) {return el.category === `control`}"},
       {"База данных": "function (el) {return el.category === `base`}"}
-    }
+    ]
   },
   "list": [
     {
