@@ -1,4 +1,20 @@
 {
+  "option": {
+    "getFilterData": {
+      {"Все": "function () {return true;}"},
+      {"Основные языки": "function (el) {return el.category === `lang`}"},
+      {"Шаблонизатор": "function (el) {return el.category === `templates`}"},
+      {"Компилятор": "function (el) {return el.category === `compiler`}"},
+      {"Диспетчер задач": "function (el) {return el.category === `taskManagers`}"},
+      {"CRM": "function (el) {return el.category === `crm`}"},
+      {"Среда разработки": "function (el) {return el.category === `ide`}"},
+      {"Плагин JS": "function (el) {return el.category === `plugin`}"},
+      {"Фраймворк JS": "function (el) {return el.category === `framework`}"},
+      {"Препроцессоры CSS": "function (el) {return el.category === `preprocessor`}"},
+      {"Система контроля версий": "function (el) {return el.category === `control`}"},
+      {"База данных": "function (el) {return el.category === `base`}"}
+    }
+  },
   "list": [
     {
       "name": "Three.js",
