@@ -111,6 +111,56 @@
       "category": "plugin"
     }
   ],
+  "getFilterData": [
+    {
+      "name": "Все",
+      "key": ""
+    },
+    {
+      "name": "Основные языки",
+      "key": "lang"
+    },
+    {
+      "name": "Шаблонизатор",
+      "key": "templates"
+    },
+    {
+      "name": "Компилятор",
+      "key": "compiler"
+    },
+    {
+      "name": "Диспетчер задач",
+      "key": "taskManagers"
+    },
+    {
+      "name": "CRM",
+      "key": "crm"
+    },
+    {
+      "name": "Среда разработки",
+      "key": "ide"
+    },
+    {
+      "name": "Плагин JS",
+      "key": "plugin"
+    },
+    {
+      "name": "Фраймворк JS",
+      "key": "framework"
+    },
+    {
+      "name": "Препроцессоры CSS",
+      "key": "preprocessor"
+    },
+    {
+      "name": "Система контроля версий",
+      "key": "control"
+    },
+    {
+      "name": "База данных",
+      "key": "base"
+    }
+  ],
   "projects": [
     {
       "name": "Esit Украина",
