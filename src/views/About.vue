@@ -43,7 +43,7 @@
           <ul class="about__description">
             <li v-for="(text, key) in ABOUT" :key="key">{{ text }}</li>
           </ul>
-          <p>More about me you can find in <router-link to="/knowledge" class="about__link">KNOWLEDGE</router-link> and about my works in <router-link to="/portfolio" class="about__link">PORTFOLIO</router-link>.</p>
+          <p>More about me you can find in <router-link to="/knowledge" class="about__link-text">KNOWLEDGE</router-link> and about my works in <router-link to="/portfolio" class="about__link-text">PORTFOLIO</router-link>.</p>
         </div>
       </div>
     </div>
