@@ -1,7 +1,7 @@
 <template>
 <div class="error-message">
     <p>Page not found</p>
-    <a href="/" class="btn">Home</a>
+    <router-link to="/" class="btn">Home</router-link>
 </div>
 </template>
 

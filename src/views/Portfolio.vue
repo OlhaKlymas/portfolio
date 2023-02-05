@@ -4,8 +4,7 @@
     <Error v-else-if="IS_ERROR"/>
     <div v-else class="portfolio">
       <div class="portfolio__item" v-for="project in PROJECTS" >
-        <a class="portfolio__link"
-          :href="`/portfolio/${project.id}`"
+        <router-link :to="`/portfolio/${project.id}`" class="portfolio__link"
           :style="{'background-image':`url('${project.img}')`}"
           >
           <span class="portfolio__item-description">
@@ -13,7 +12,7 @@
             <hr class="portfolio__divider divider">
             <span class="portfolio__item-text">{{project.description}}</span>
           </span>
-        </a>
+        </router-link>
       </div>
     </div>
   </section>

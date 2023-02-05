@@ -15,18 +15,18 @@
         </div>
         <div class="project__button-group">
           <a :href="PROJECT.link" target="_blank" class="project__button btn btn--pink">Go to website</a>
-          <a href="/portfolio" class="project__button btn">Portfolio</a>
+          <router-link to="/portfolio" class="project__button btn">Portfolio</router-link>
         </div>
       </div>
       <div class="project__other">
-        <a v-if="prevProject" class="project__other-btn project__other-btn--prev" :href="`/portfolio/${prevProject}`">
+        <router-link v-if="prevProject" class="project__other-btn project__other-btn--prev" :to="`/portfolio/${prevProject}`">
           <span class="project__other-text">Previous - </span>
           <span class="project__other-name">{{ prevProject }}</span>
-        </a>
-        <a v-if="nextProject" class="project__other-btn project__other-btn--next" :href="`/portfolio/${nextProject}`">
+        </router-link>
+        <router-link v-if="nextProject" class="project__other-btn project__other-btn--next" :to="`/portfolio/${nextProject}`">
           <span class="project__other-text">Next - </span>
           <span class="project__other-name">{{ nextProject }}</span>
-        </a>
+        </router-link>
       </div>
     </div>
   </section>
@@ -43,7 +43,11 @@ export default {
     ...mapGetters([
     "IS_LOADED", "IS_ERROR", "PROJECTS", "PROJECT"
     ]),
+    currentProject() {
+      return this.GET_PROJECT_FROM_API(this.$route.params.id)
+    },
     currentProjectIndex() {
+      this.currentProject
       return this.PROJECTS.findIndex(item => item.id === this.$route.params.id)
     },
     nextProject() {
