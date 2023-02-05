@@ -1,0 +1,39 @@
+{
+  "name": "olhaklymas",
+  "version": "0.1.0",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "register-service-worker": "^1.7.1",
+    "sass": "^1.58.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vueisotope": "^3.1.2",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-pwa": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "description": "<div align=\"center\">\r   <img src=\"https://github.com/OlhaKlymas/portfolio/blob/master/src/assets/img/icon.png\" alt=\"web-developer\" / >\r   <h1>Olha Klymas</h1>\r   <i>web-developer</i>\r </div>",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlhaKlymas/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlhaKlymas/portfolio/issues"
+  },
+  "homepage": "https://github.com/OlhaKlymas/portfolio#readme"
+}

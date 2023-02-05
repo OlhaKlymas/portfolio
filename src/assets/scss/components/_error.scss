@@ -1,0 +1,8 @@
+.error-message {
+    height: 100%;
+    gap: 1rem;
+
+    @extend %flexbox-center;
+
+    @include font(1.7rem, 400, 1.5, center, $pink-color);
+}

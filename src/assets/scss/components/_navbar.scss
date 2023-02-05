@@ -1,0 +1,56 @@
+.navbar {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background: $main-light-color;
+    color: $main-text-color;
+
+    &__wrapper {
+        margin-top: $spacer;
+        height: auto;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            text-align: center;
+        }
+    }
+
+    &__photo {
+        width: $spacer;
+        height: $spacer;
+        background: url("assets/img/icon-active.png") no-repeat;
+        background-size: contain;
+        margin: 2rem 1rem 2rem 4rem;
+        filter: brightness(0);
+        transition: .5s;
+
+        &:hover {
+            filter: brightness(1);
+        }
+
+        @media screen and (max-width: $breakpoint-lg) {
+            margin: auto;
+        }
+    }
+
+    &__photo--active {
+        filter: brightness(1);
+    }
+
+    &__item {
+        display: block;
+        padding: 1rem 1rem 1rem 4rem;
+        text-transform: uppercase;
+
+        @include font(1.2rem, 700, 1, start, $main-text-color);
+
+        @media screen and (max-width: $breakpoint-lg) {
+            padding: 1rem;
+            text-align: center;
+        }
+    }
+
+    &__item:hover,
+    &__item--active {
+        color: $pink-color;
+    }
+}

@@ -1,0 +1,81 @@
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    @media screen and (max-width: $breakpoint-sm) {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    &__divider {
+        margin: 1rem auto;
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 30vh;
+        min-height: 200px;
+        background-size: cover;
+        background-position: center;
+        
+        @extend %shadow;
+    
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: $main-dark-color;
+            opacity: .5;
+            transition: 0.5s;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                opacity: .7;
+            }
+        }
+    
+        &:hover {
+            .portfolio__item-description {
+                @extend %flexbox-center;
+            }
+            
+            &:after {
+                background: $main-light-color;
+                opacity: .9;
+            }
+        }
+    }
+
+    &__item-description {
+        display: none;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        padding: 1rem;
+        
+        @extend %shadow;
+
+        @include font(1rem, 400, 1.2, center, $main-dark-color);
+
+        @media screen and (max-width: $breakpoint-sm) {
+            color: $main-light-color;
+
+            @include flexbox($dir: column, $ai: center, $jc: center);
+        }
+    }
+    
+    &__item-title {
+        line-height: 1;
+        text-transform: uppercase;
+
+        @include font(1.2rem, 700, 1.2, center, $main-dark-color);
+
+        @media screen and (max-width: $breakpoint-sm) {
+            color: $main-light-color;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@mixin flexbox($dir: row, $jc: flex-start, $ai: flex-start, $wrap: wrap) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $wrap;
+}
+
+@mixin box-shadow($d: inset, $x: 0, $y: 0, $blur: 0, $color: rgba(0, 0, 0, 0.5)){
+    -webkit-box-shadow: $d $x $y $blur $color;
+    -moz-box-shadow: $d $x $y $blur $color;
+    box-shadow: $d $x $y $blur $color;
+}
+
+@mixin bg-gradient($img) {
+    background: $linear-gradient, url($img) top left / cover no-repeat;
+}
+
+@mixin font($fs: 1rem, $fw: 400, $lh: 1.2, $ta: start, $color: $main-dark-color) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+    text-align: $ta;
+    color: $color;
+}

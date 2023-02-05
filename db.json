@@ -1,0 +1,213 @@
+{
+  "about": [
+    "I have been engaged in frontend development since 2018, I have strong skills in HTML, CSS, JavaScript, and TypeScript. During this time, I have implemented many interesting projects of different levels of complexity - from a simple landing page to an online store.",
+    "I have experience working with the VUE framework, and I also know REACT. My portfolio also is based on VUE framework :)",
+    "I developed various online stores and landing pages using WordPress and Opencart. On the sites which are based on WordPress, I applied different plugins like Elementor, Woocommerce, Advanced custom fields, Ajax search for woocommerce, etc.",
+    "I have implemented Visicom API to get customer addresses using the map, Plektan CRM system (for realtors) via the REST API, and WP REST API to implement filters and post pages on the site which is based on WordPress.",
+    "I`m working on SalesForce Commerce Cloud (Demandware) projects now so have experience with Storefront Reference Architecture (SFRA).",
+    "Also, I am teaching courses in HTML&CSS, JavaScript Base, and JavaScript Advanced. I have graduated more than 80 students and more of them became Junior Frontend Developers. Since last October, I am taking part in the project ІТ Generation of the Ministry of Digital Transformation in Ukraine and partners. It helps Ukrainians to be able to get a new qualification free. I have graduated 24 students with this project."
+  ],
+  "list": [
+    {
+      "id": 1,
+      "name": "Three.js",
+      "category": "plugin"
+    },
+    {
+      "id": 2,
+      "name": "Vue",
+      "category": "framework"
+    },
+    {
+      "id": 3,
+      "name": "Wordpress",
+      "category": "crm"
+    },
+    {
+      "id": 4,
+      "name": "Visicom",
+      "category": "plugin"
+    },
+    {
+      "id":5,
+      "name": "SCSS",
+      "category": "preprocessor"
+    },
+    {
+      "id":6,
+      "name": "SCSS",
+      "category": "preprocessor"
+    },
+    {
+      "id": 7,
+      "name": "TypeScript",
+      "category": "lang"
+    },
+    {
+      "id": 8,
+      "name": "HTML",
+      "category": "lang"
+    },
+    {
+      "id": 9,
+      "name": "Git",
+      "category": "control"
+    },
+    {
+      "id": 10,
+      "name": "Fullpage.js",
+      "category": "plugin"
+    },
+    {
+      "id": 11,
+      "name": "Less",
+      "category": "preprocessor"
+    },
+    {
+      "id": 12,
+      "name": "Visual Studio Code",
+      "category": "ide"
+    },
+    {
+      "id": 13,
+      "name": "Opencart",
+      "category": "crm"
+    },
+    {
+      "id": 14,
+      "name": "CSS",
+      "category": "lang"
+    },
+    {
+      "id": 15,
+      "name": "GitLab",
+      "category": "hosting"
+    },
+    {
+      "id": 16,
+      "name": "phpStorm",
+      "category": "ide"
+    },
+    {
+      "id": 17,
+      "name": "Owl-carousel.js",
+      "category": "plugin"
+    },
+    {
+      "id": 18,
+      "name": "npm",
+      "category": "taskManagers"
+    },
+    {
+      "id": 19,
+      "name": "webpack",
+      "category": "compiler"
+    },
+    {
+      "id": 20,
+      "name": "JS",
+      "category": "lang"
+    },
+    {
+      "id": 21,
+      "name": "jQuery",
+      "category": "plugin"
+    },
+    {
+      "id": 22,
+      "name": "Slick.js",
+      "category": "plugin"
+    },
+    {
+      "id": 23,
+      "name": "Sublime Text",
+      "category": "ide"
+    },
+    {
+      "id": 24,
+      "name": "Firebase",
+      "category": "base"
+    },
+    {
+      "id": 25,
+      "name": "Isotop.js",
+      "category": "plugin"
+    },
+    {
+      "id": 26,
+      "name": "React",
+      "category": "framework"
+    },
+    {
+      "id": 27,
+      "name": "GitHub",
+      "category": "hosting"
+    }
+  ],
+  "projects": [
+    {
+      "id": "atb",
+      "name": "АТБ",
+      "description": "One of the largest online grocery stores in Ukraine",
+      "img": "img/atb.jpg",
+      "link": "https://www.atbmarket.com/",
+      "text": "The site is based on the WordPress CMS system. It integrates the Plektan CRM system (for realtors) via the REST API. Vue components are used for integration. This makes it easy to filter offices. The WP REST API is also used, which made it possible to implement filters and post pages."
+    },
+    {
+      "id": "qanabi",
+      "name": "Qanabi",
+      "description": "European brand of cannabis-based products",
+      "img": "img/qanabi.png",
+      "link": "https://qanabi.com/",
+      "text": "The site is based on the WordPress CMS system. It integrates the Plektan CRM system (for realtors) via the REST API. Vue components are used for integration. This makes it easy to filter offices. The WP REST API is also used, which made it possible to implement filters and post pages."
+    },
+    {
+      "id": "meplace",
+      "name": "MePlace",
+      "description": "A modern site for a kindergarten in Britain",
+      "img": "img/meplace.png",
+      "link": "https://meplace.co/",
+      "text": "This is an online catalog with an example of customer work. Made according to the designer's specifications. It is based on the WordPress CMS system. Implemented static pages, product record pages, as well as a product catalog. The site is adapted for mobile devices."
+    },
+    {
+      "id": "esit",
+      "name": "Esit Ukraine",
+      "description": "Official distributor of weighing equipment",
+      "img": "img/esit.png",
+      "link": "https://esit.com.ua/",
+      "text": "The site is a full-fledged online store and is based on the WordPress CMS system. It has developed static pages, a product catalog, a product card, a shopping cart and ordering. The site is adapted for mobile devices."
+    },
+    {
+      "id": "vagovi",
+      "name": "Весовые решения",
+      "description": "Weighing equipment manufacturer",
+      "img": "img/vagovi.png",
+      "link": "https://vagovi.com.ua",
+      "text": "The site is an online catalog of goods for customers. It is based on the Opencart CMS system. Implemented static pages, product catalog and product card. The site is adapted for mobile devices."
+    },
+    {
+      "id": "montreal",
+      "name": "Montreal Realty Group",
+      "description": "Real estate agency of elite real estate",
+      "img": "img/montreal.png",
+      "link": "https://montreal.klymas.com/",
+      "text": "The site is based on the WordPress CMS system. It integrates the Plektan CRM system (for realtors) via the REST API. Vue components are used for integration. This makes it easy to filter offices. The WP REST API is also used, which made it possible to implement filters and post pages."
+    },
+    {
+      "id": "expo",
+      "name": "Expo Solution",
+      "description": "Manufacturer of exhibition and trade equipment",
+      "img": "img/expo.png",
+      "link": "https://www.expo-solution.com/",
+      "text": "This is an online catalog with an example of customer work. Made according to the designer's specifications. It is based on the WordPress CMS system. Implemented static pages, product record pages, as well as a product catalog. The site is adapted for mobile devices."
+    },
+    {
+      "id": "cabelshop",
+      "name": "Cabel shop",
+      "description": "Manufacturer of exhibition and trade equipment",
+      "img": "img/cableshop.png",
+      "link": "https://cable-shop.com.ua/",
+      "text": "This is an online catalog with an example of customer work. Made according to the designer's specifications. It is based on the WordPress CMS system. Implemented static pages, product record pages, as well as a product catalog. The site is adapted for mobile devices."
+    }
+  ]
+}

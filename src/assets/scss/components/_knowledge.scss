@@ -1,0 +1,112 @@
+.knowledge {
+    gap: 30px;
+
+    @include flexbox($wrap: nowrap);
+
+    @media screen and (max-width: $breakpoint-md) {
+        flex-direction: column;
+    }
+
+    &__button-group {
+        width: 20%;
+
+        @include flexbox($dir: column, $jc: center, $ai: stretch);
+
+        @media screen and (max-width: $breakpoint-md) {
+            width: 100%;
+
+            @include flexbox($dir: row);
+        }
+    }
+
+    &__button {
+        padding: 0.5em;
+        background: $main-light-color;
+        font-family: 'Noto Sans', sans-serif;
+        cursor: pointer;
+        border: 1px solid;
+
+        @include font($fs: 1rem, $fw: 700, $color: $main-dark-color);
+    }
+
+    &__button:hover {
+        background-color: $main-text-color;
+        color: $main-light-color;
+    }
+
+    &__button:active,
+    &__button--checked {
+        background-color: $pink-color;
+        color: $main-light-color;
+    }
+
+    &__list {
+        width: 100%;
+        max-width: 670px;
+        margin: 0 auto;
+        padding: 1rem;
+    
+        @include flexbox;
+    }
+
+    &__item {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+    
+        @include flexbox($jc: center, $ai: center);
+
+        @include font($fs: 1rem, $fw: 400, $color: $main-light-color);
+    }
+    
+    &__item--lang {
+        background: #F00;
+    }
+
+    &__item--templates {
+        background: #F80;
+    }
+
+    &__item--compiler {
+        background: #607D8B;
+    }
+
+    &__item--taskManagers {
+        background: #5b01d3;
+    }
+
+    &__item--crm {
+        background: #189945;
+    }
+
+    &__item--ide {
+        background: #22b3b3;
+    }
+
+    &__item--plugin {
+        background: #08F;
+    }
+
+    &__item--framework {
+        background: #00F;
+    }
+
+    &__item--preprocessor {
+        background: #F0F;
+    }
+
+    &__item--control {
+        background: #F08;
+    }
+
+    &__item--base {
+        background: #f3ba0e;
+    }
+
+    &__item--hosting {
+        background: #00236e;
+    }
+}

@@ -1,0 +1,168 @@
+.project {
+    height: 100%;
+    @include flexbox($jc: space-between);
+
+    &__head {
+        width: 100%;
+    }
+
+    &__title {
+        text-transform: uppercase;
+
+        @include font(1.4rem, 700, 1.2, center, $main-light-color);
+    }
+
+    &__subtitle {
+        @include font(1rem, 400, 1.2, center, $main-light-color);
+    }
+
+    &__divider {
+        margin: 1rem auto;
+    }
+
+    &__description {
+        margin-top: 2rem;
+        gap: 2rem;
+
+        @include flexbox($wrap: nowrap, $ai: center);
+
+        @include font(1rem, 400, 1.4, start, $main-light-color);
+
+        @media screen and (max-width: $breakpoint-lg) {
+            @include flexbox($dir: column-reverse, $ai: center);
+        }
+    }
+
+    &__text{
+        max-width: 900px;
+    }
+
+    &__image {
+        width: 40%;
+        min-width: 300px;
+        height: 400px;
+        flex-shrink: 0;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            height: auto;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__button-group {
+        gap: 1rem;
+        margin-top: 2rem;
+
+        @include flexbox($ai: center, $jc: center);
+    }
+
+    &__button {
+        min-width: 140px;
+    }
+
+    &__other {
+        position: relative;
+        width: 100%;
+        height: 70px;
+        margin: 2rem 0 0;
+        padding: 0 2rem;
+
+        @include flexbox($ai: center, $jc: space-between);
+    }
+
+    &__other-btn {
+        position: absolute;
+        gap: 0.5rem;
+
+        @include font(1.2rem, 600, 1, center, $pink-color);
+
+        @include flexbox($ai: center, $jc: center);
+
+        @media screen and (max-width: $breakpoint-sm) {
+            @include flexbox($dir: column);
+        }
+        
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid $pink-color;
+            border-right: 2px solid $pink-color;
+            transition: .5s;
+
+            @media screen and (max-width: $breakpoint-sm) {
+                width: 7px;
+                height: 7px;
+                top: 5px;
+            }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            width: 0;
+            height: 2px;
+            background-color: $pink-color;
+            transition: .5s;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+
+    }
+
+    &__other-btn--prev {
+        left: 2rem;
+
+        &::before {
+            left: -1.2rem;
+            transform: rotate(225deg);
+        }
+
+        &:hover::before {
+            left: -1.5rem;
+        }
+    }
+
+    &__other-btn--next {
+        right: 2rem;
+
+        &::before {
+            right: -1.2rem;
+            transform: rotate(45deg);
+        }
+
+        &:hover::before {
+            right: -1.5rem;
+        }
+    }
+
+    &__other-name {
+        text-transform: uppercase;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            font-size: 1rem;
+        }
+    }
+
+    &__other-text {
+        @media screen and (max-width: $breakpoint-sm) {
+            display: none;
+        }
+    }
+}

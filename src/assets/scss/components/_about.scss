@@ -1,0 +1,133 @@
+.about {
+    color: $main-light-color;
+
+    &__wrap {
+        gap: 2rem;
+
+        @include flexbox($wrap: nowrap);
+    
+        @media screen and (max-width: $breakpoint-lg) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__text {
+        max-width: 900px;
+        font-size: 1.2rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    &__wage {
+        @include flexbox($ai: center);
+    }
+
+    &__wage-wrap {
+        position: relative;
+        border-bottom: 1px solid $main-light-color;
+        margin: 0 1rem;
+        gap: 5px;
+
+        @include flexbox($ai: center);
+
+        &:hover {
+            color: $pink-color;
+            cursor: pointer;
+        }
+    }
+
+    &__wage--amount {
+        padding-right: 1.5rem;
+
+        
+        &:hover {
+            &::after {
+                border-color: $pink-color;
+            }
+
+            .about__select {
+                color: $pink-color;
+            }
+        }
+    }
+
+    &__select-wrap {
+        position: relative;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            right: 3px;
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            border-top: 2px solid $main-light-color;
+            border-right: 2px solid $main-light-color;
+            transform: rotate(135deg);
+        }
+    }
+
+    &__select {
+        position: relative;
+        z-index: 2;
+        display: inline-block;
+        width: auto;
+        height: 1.5rem;
+        background: transparent;
+        color: $main-light-color;
+        padding: 0 1.5rem 0 0.5rem;
+        border: none;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+
+            .about__select {
+                color: $pink-color;
+            }
+    }
+
+    &__select-option {
+        color: $pink-color;
+        background: $main-dark-color;
+    }
+
+    &__description {
+        list-style: disc;
+        padding-left: 1.5rem;
+        margin: 2rem 0;
+        gap: 1rem;
+        
+        @include font($fs:1rem, $color: $main-light-color, $lh: 1.5);
+
+        @include flexbox($dir: column);
+    }
+
+    &__link {
+        color: $pink-color;
+    }
+
+    &__addition {
+        @extend %flexbox-center;
+    }
+
+    &__photo {
+        width: 300px;
+        flex-shrink: 0;
+        margin-bottom: 2rem;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.btn {
+    display: inline-block;
+    background: $main-light-color;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.5s;
+
+    @include font($fw: 600, $color: $main-dark-color, $ta: center);
+
+    &:hover {
+        background: $pink-color;
+        color: $main-light-color;
+    }
+
+    &--pink {
+        background: $pink-color;
+        color: $main-light-color;
+
+        &:hover {
+            background: $main-light-color;
+            color: $pink-color;
+        }
+    }
+}

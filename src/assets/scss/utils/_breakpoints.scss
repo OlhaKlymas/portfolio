@@ -1,0 +1,17 @@
+$breakpoint-xs:     0;
+$breakpoint-ms:     375px;
+$breakpoint-sm:     428px;
+$breakpoint-md:     768px;
+$breakpoint-lg:     1024px;
+$breakpoint-xl:     1440px;
+$breakpoint-xxl:    1512px;
+
+$grid-breakpoints: (
+    xs: $breakpoint-xs,
+    ms: $breakpoint-ms,
+    sm: $breakpoint-sm,
+    md: $breakpoint-md,
+    lg: $breakpoint-lg,
+    xl: $breakpoint-xl,
+    xxl: $breakpoint-xxl
+) !default;

@@ -1,0 +1,92 @@
+.hero-page {
+    height: 100%;
+
+    &__wrap {
+        height: 100%;
+
+        @include flexbox($dir: column, $jc: flex-end, $ai: stretch);
+    }
+
+    &__top {
+        position: absolute;
+        right: 0;
+        top: $spacer;
+
+        @include flexbox($dir: column, $ai: flex-end);
+    }
+
+    &__position {
+        width: 30%;
+        min-width: 300px;
+        background-color: $pink-color;
+        padding: 1rem;
+
+        @include font(1.7rem, 400, 1, center, $main-light-color);
+
+        @media screen and (max-width: $breakpoint-md) {
+            min-width: 200px;       
+        }
+    }
+
+    &__bottom {
+        @extend %flexbox-center;
+    }
+
+    &__description {
+        width: 100%;
+        color: $main-text-color;
+
+        @include flexbox($ai: flex-end);
+
+        @media screen and (max-width: $breakpoint-lg) {
+           padding: 0;
+        }
+    }
+
+    &__name {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+
+        @include font($fs: 8rem, $fw: 700, $lh: 1, $color: $main-text-color);
+
+        @media screen and (max-width: $breakpoint-lg) {
+            font-size: 6rem;          
+        }
+
+        @media screen and (max-width: $breakpoint-md) {
+            font-size: 4rem;          
+        }
+    }
+
+    &__family {
+        position: relative;
+        border-right: 2px solid $main-text-color;
+    }
+
+    &__head {
+        width: 10rem;
+        padding: 13px;
+        border-top: 2px solid $main-text-color;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+
+        @include flexbox($jc: space-between);
+
+        @include font($fs: 2rem, $lh: 1, $fw: 700);
+
+        @media screen and (max-width: $breakpoint-md) {
+            font-size: 1rem;
+        }
+    }
+
+
+    &__mark--color {
+        color: $pink-color;
+    }
+
+    &__mark--remove-color {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px $main-text-color;
+    }
+}
