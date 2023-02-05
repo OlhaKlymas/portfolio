@@ -12,7 +12,7 @@
 
           <div>
             <p>Calgary, Kyiv</p>
-            <p>Email: <a href="maito:olhaklymas@gmail.com" class="about__link">olhaklymas@gmail.com</a></p>
+            <p>Email: <a href="mailto:olhaklymas@gmail.com" class="about__link">olhaklymas@gmail.com</a></p>
             <p>Account GitHub: <a href="https://github.com/OlhaKlymas" class="about__link" target="_blank">https://github.com/OlhaKlymas</a></p>
             <p>Link to Portfolio code: <a href="https://github.com/OlhaKlymas/portfolio" class="about__link" target="_blank">https://github.com/OlhaKlymas/portfolio</a></p>
             <p class="about__wage">Desired salary:
