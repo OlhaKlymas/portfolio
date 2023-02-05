@@ -1,12 +1,12 @@
 <div align="center">
-  <img src="https://github.com/OlhaKlymas/portfolio/blob/master/src/assets/img/icon.png" alt="web-developer" / >
+  <img src="https://github.com/OlhaKlymas/portfolio/blob/main/src/assets/img/icon.png" alt="web-developer" / >
   <h1>Olha Klymas</h1>
   <i>Frontend Developer</i>
 </div>
 
 ### 📜 Description  
 This project is my portfolio where I describe the technologies with I know and have experience with them. <br>
-Also, the project contains information about me, contacts and <a href="https://github.com/OlhaKlymas/portfolio/blob/master/src/assets/OlhaKlymasCV.pdf">CV</a>.<br>
+Also, the project contains information about me, contacts and <a href="https://github.com/OlhaKlymas/portfolio/blob/main/src/assets/OlhaKlymasCV.pdf">CV</a>.<br>
 This portfolio is implemented with the help of <strong>Vue.js</strong>.<br>
 
 ### 📸 View 
