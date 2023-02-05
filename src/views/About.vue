@@ -6,38 +6,44 @@
         <div class="about__text">
           <h2 class="about__title">Olha Klymas</h2>
           <p>Engaged in development: more than {{ Math.floor((this.date - this.start) / (24 * 3600 * 365.25 * 1000)) }} years</p>
-          <p>Calgary, Kyiv</p>
-          <p class="about__wage">Desired salary:
-            <span class="about__wage-wrap" :class="amount && 'about__wage--amount'"> 
-              <span>about {{amount || wage}}</span>
-              <span v-if="amount" class="about__select-wrap">
-                <select class="about__select" @change="onChange($event)">
-                  <option
-                      class="about__select-option"
-                      v-for="cur of currencies"
-                      :key="cur"
-                      :value="cur"
-                  >{{ cur }}
-                  </option>
-                </select>
+          <div class="about__photo">
+            <img src="@/assets/img/myphoto.png" alt="Olha Klymas">
+          </div>
+
+          <div>
+            <p>Calgary, Kyiv</p>
+            <p>Email: <a href="maito:olhaklymas@gmail.com" class="about__link">olhaklymas@gmail.com</a></p>
+            <p>Account GitHub: <a href="https://github.com/OlhaKlymas" class="about__link" target="_blank">https://github.com/OlhaKlymas</a></p>
+            <p>Link to Portfolio code: <a href="https://github.com/OlhaKlymas/portfolio" class="about__link" target="_blank">https://github.com/OlhaKlymas/portfolio</a></p>
+            <p class="about__wage">Desired salary:
+              <span class="about__wage-wrap" :class="amount && 'about__wage--amount'"> 
+                <span>about {{amount || wage}}</span>
+                <span v-if="amount" class="about__select-wrap">
+                  <select class="about__select" @change="onChange($event)">
+                    <option
+                        class="about__select-option"
+                        v-for="cur of currencies"
+                        :key="cur"
+                        :value="cur"
+                    >{{ cur }}
+                    </option>
+                  </select>
+                </span>
+                <span v-else>{{currencies[0]}}</span>
+                <span>per hour</span>
               </span>
-              <span v-else>{{currencies[0]}}</span>
-              <span>per hour</span>
-            </span>
-          </p>
+            </p>
+            <a href="../OlhaKlymasCV.pdf" target="_blank" class="about__btn btn btn--pink">
+              <i class="fas fa-download"></i>
+              Download CV
+            </a>
+          </div>
+        </div>
+        <div class="about__addition">
           <ul class="about__description">
             <li v-for="(text, key) in ABOUT" :key="key">{{ text }}</li>
           </ul>
           <p>More about me you can find in <router-link to="/knowledge" class="about__link">KNOWLEDGE</router-link> and about my works in <router-link to="/portfolio" class="about__link">PORTFOLIO</router-link>.</p>
-        </div>
-        <div class="about__addition">
-          <div class="about__photo">
-            <img src="@/assets/img/myphoto.png" alt="Olha Klymas">
-          </div>
-          <a href="../OlhaKlymasCV.pdf" target="_blank" class="btn btn--pink">
-            <i class="fas fa-download"></i>
-            Download CV
-          </a>
         </div>
       </div>
     </div>

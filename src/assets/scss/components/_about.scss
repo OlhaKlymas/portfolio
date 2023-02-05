@@ -14,6 +14,9 @@
     &__text {
         max-width: 900px;
         font-size: 1.2rem;
+        gap: 10px;
+
+        @include flexbox($dir: column);
     }
 
     &__title {
@@ -111,16 +114,25 @@
 
     &__link {
         color: $pink-color;
+        
+        @media screen and (max-width: $breakpoint-sm) {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 320px;
+            display: block;
+        }
     }
 
     &__addition {
+        max-width: 700px;
+
         @extend %flexbox-center;
     }
 
     &__photo {
         width: 300px;
         flex-shrink: 0;
-        margin-bottom: 2rem;
 
         @media screen and (max-width: $breakpoint-lg) {
             display: none;
@@ -129,5 +141,9 @@
         img {
             width: 100%;
         }
+    }
+
+    &__btn {
+        margin-top: 1rem;
     }
 }
