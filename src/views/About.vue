@@ -60,7 +60,7 @@ export default {
     date: new Date(),
     start: new Date(2018, 6, 1),
     currencies: ['CAD', 'USD', 'EUR'],
-    wage: 40,
+    wage: 30,
     amount: null
   }),
   components:{Loader, Error},
