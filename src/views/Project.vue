@@ -10,7 +10,7 @@
       </div>
       <div class="project__wrap">
         <div class="project__description">
-          <div class="project__text">{{PROJECT.text}}</div>
+          <div class="project__text" v-html="PROJECT.text"></div>
           <div class="project__image"><img :src="`../${PROJECT.img}`" :alt="PROJECT.name"></div>
         </div>
         <div class="project__button-group">
