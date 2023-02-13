@@ -115,7 +115,7 @@ export default new Vuex.Store({
     },
     GET_PROJECTS_FROM_API({commit}){
       commit("SET_IS_LOADED", true)
-      return axios(`https://my-json-server.typicode.com/OlhaKlymas/project-db/projects`, {
+      return axios(`https://my-json-server.typicode.com/OlgaKlimass/projects-db/projects`, {
         method: "GET"
       }).then((projects)=>{
         commit("SET_PROJECTS_TO_STATE", projects.data);
@@ -131,7 +131,7 @@ export default new Vuex.Store({
     },
     GET_PROJECT_FROM_API({commit}, id){
       commit("SET_IS_LOADED", true)
-      return axios(`https://my-json-server.typicode.com/OlhaKlymas/project-db/projects/${id}`, {
+      return axios(`https://my-json-server.typicode.com/OlgaKlimass/projects-db/projects/${id}`, {
         method: "GET"
       }).then((project)=>{
         commit("SET_PROJECT_TO_STATE", project.data);

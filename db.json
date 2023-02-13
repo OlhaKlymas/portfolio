@@ -10,171 +10,151 @@
   "list": [
     {
       "id": 1,
-      "name": "Three.js",
-      "category": "plugin"
-    },
-    {
-      "id": 2,
       "name": "Vue",
       "category": "framework"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Wordpress",
       "category": "crm"
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Visicom",
       "category": "plugin"
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "SCSS",
       "category": "preprocessor"
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "Bootstrap",
       "category": "plugin"
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "HTML",
       "category": "lang"
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "Git",
       "category": "control"
     },
     {
-      "id": 9,
-      "name": "Fullpage.js",
-      "category": "plugin"
-    },
-    {
-      "id": 10,
+      "id": 8,
       "name": "GSAP",
       "category": "plugin"
     },
     {
-      "id": 11,
-      "name": "Less",
-      "category": "preprocessor"
-    },
-    {
-      "id": 12,
+      "id": 9,
       "name": "Visual Studio Code",
       "category": "ide"
     },
     {
-      "id": 13,
+      "id": 10,
       "name": "Opencart",
       "category": "crm"
     },
     {
-      "id": 14,
+      "id": 10,
       "name": "CSS",
       "category": "lang"
     },
     {
-      "id": 15,
+      "id": 12,
       "name": "Select2",
       "category": "plugin"
     },
     {
-      "id": 16,
+      "id": 13,
       "name": "GitLab",
       "category": "hosting"
     },
     {
-      "id": 17,
+      "id": 14,
       "name": "Swiper.js",
       "category": "plugin"
     },
     {
-      "id": 18,
+      "id": 15,
       "name": "Figma",
       "category": "design"
     },
     {
-      "id": 19,
+      "id": 16,
       "name": "phpStorm",
       "category": "ide"
     },
     {
-      "id": 20,
-      "name": "Owl-carousel.js",
-      "category": "plugin"
-    },
-    {
-      "id": 21,
+      "id": 17,
       "name": "npm",
       "category": "taskManagers"
     },
     {
-      "id": 22,
+      "id": 18,
       "name": "IMask.js",
       "category": "plugin"
     },
     {
-      "id": 23,
+      "id": 19,
       "name": "webpack",
       "category": "compiler"
     },
     {
-      "id": 24,
+      "id": 20,
       "name": "Photoshop",
       "category": "design"
     },
     {
-      "id": 25,
+      "id": 21,
       "name": "JS",
       "category": "lang"
     },
     {
-      "id": 26,
+      "id": 22,
       "name": "jQuery",
       "category": "plugin"
     },
     {
-      "id": 27,
+      "id": 23,
       "name": "Slick.js",
       "category": "plugin"
     },
     {
-      "id": 28,
+      "id": 24,
       "name": "Sublime Text",
       "category": "ide"
     },
     {
-      "id": 29,
+      "id": 25,
       "name": "Firebase",
       "category": "base"
     },
     {
-      "id": 30,
+      "id": 26,
       "name": "Isotop.js",
       "category": "plugin"
     },
     {
-      "id": 31,
+      "id": 27,
       "name": "React",
       "category": "framework"
     },
     {
-      "id": 32,
+      "id": 28,
       "name": "GitHub",
       "category": "hosting"
     },
     {
-      "id": 33,
+      "id": 29,
       "name": "TypeScript",
       "category": "lang"
     },
     {
-      "id": 34,
+      "id": 30,
       "name": "gulp",
       "category": "compiler"
     }
