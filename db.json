@@ -29,33 +29,33 @@
       "category": "plugin"
     },
     {
-      "id":5,
+      "id": 5,
       "name": "SCSS",
       "category": "preprocessor"
     },
     {
-      "id":6,
-      "name": "SCSS",
-      "category": "preprocessor"
+      "id": 6,
+      "name": "Bootstrap",
+      "category": "plugin"
     },
     {
       "id": 7,
-      "name": "TypeScript",
-      "category": "lang"
-    },
-    {
-      "id": 8,
       "name": "HTML",
       "category": "lang"
     },
     {
-      "id": 9,
+      "id": 8,
       "name": "Git",
       "category": "control"
     },
     {
-      "id": 10,
+      "id": 9,
       "name": "Fullpage.js",
+      "category": "plugin"
+    },
+    {
+      "id": 10,
+      "name": "GSAP",
       "category": "plugin"
     },
     {
@@ -80,110 +80,145 @@
     },
     {
       "id": 15,
+      "name": "Select2",
+      "category": "plugin"
+    },
+    {
+      "id": 16,
       "name": "GitLab",
       "category": "hosting"
     },
     {
-      "id": 16,
-      "name": "phpStorm",
-      "category": "ide"
-    },
-    {
       "id": 17,
-      "name": "Owl-carousel.js",
+      "name": "Swiper.js",
       "category": "plugin"
     },
     {
       "id": 18,
+      "name": "Figma",
+      "category": "design"
+    },
+    {
+      "id": 19,
+      "name": "phpStorm",
+      "category": "ide"
+    },
+    {
+      "id": 20,
+      "name": "Owl-carousel.js",
+      "category": "plugin"
+    },
+    {
+      "id": 21,
       "name": "npm",
       "category": "taskManagers"
     },
     {
-      "id": 19,
-      "name": "webpack",
-      "category": "compiler"
-    },
-    {
-      "id": 20,
-      "name": "JS",
-      "category": "lang"
-    },
-    {
-      "id": 21,
-      "name": "jQuery",
-      "category": "plugin"
-    },
-    {
       "id": 22,
-      "name": "Slick.js",
+      "name": "IMask.js",
       "category": "plugin"
     },
     {
       "id": 23,
+      "name": "webpack",
+      "category": "compiler"
+    },
+    {
+      "id": 24,
+      "name": "Photoshop",
+      "category": "design"
+    },
+    {
+      "id": 25,
+      "name": "JS",
+      "category": "lang"
+    },
+    {
+      "id": 26,
+      "name": "jQuery",
+      "category": "plugin"
+    },
+    {
+      "id": 27,
+      "name": "Slick.js",
+      "category": "plugin"
+    },
+    {
+      "id": 28,
       "name": "Sublime Text",
       "category": "ide"
     },
     {
-      "id": 24,
+      "id": 29,
       "name": "Firebase",
       "category": "base"
     },
     {
-      "id": 25,
+      "id": 30,
       "name": "Isotop.js",
       "category": "plugin"
     },
     {
-      "id": 26,
+      "id": 31,
       "name": "React",
       "category": "framework"
     },
     {
-      "id": 27,
+      "id": 32,
       "name": "GitHub",
       "category": "hosting"
+    },
+    {
+      "id": 33,
+      "name": "TypeScript",
+      "category": "lang"
+    },
+    {
+      "id": 34,
+      "name": "gulp",
+      "category": "compiler"
     }
   ],
   "projects": [
     {
       "id": "atb",
       "name": "АТБ",
-      "description": "One of the largest online grocery stores in Ukraine",
+      "description": "The site for online shopping in one of the most biggest chains of grocery stores in Ukraine",
       "img": "img/atb.jpg",
       "link": "https://www.atbmarket.com/",
-      "text": "The site is based on the WordPress CMS system. It integrates the Plektan CRM system (for realtors) via the REST API. Vue components are used for integration. This makes it easy to filter offices. The WP REST API is also used, which made it possible to implement filters and post pages."
+      "text": "<p>Since 2021, I have been involved in the development of the site, when I started working at Sun Agency (Kyiv).</p><p>The backend of the site is created using the Yii PHP Framework.</p><p>The site is built using rules object-oriented programming and has a component approach. The majority of components are created by using classes and complying with the principles of encapsulation and polymorphism.</p><p>For development were used these technologies: HTML, PostCSS, JavaScript, jQuery, REST API, and gulp.</p><p>Since I started work on this project, I rewrote part of the code from jQuery to JavaScript, in compliance with the modern standards of ECMA Script. In addition, axios was introduced.</p><p>During the work on this project, I suggested and done next steps for the optimization of the site:<ol><li>Using swiper.js for all sliders on the site. Before this optimization, the first part of the sliders was made on slick.js, the second part – on swiper.js, and another part – on the custom sliders.</li><li>Removed Bootstrap, which has been used since the project started. Whereas most components were refactored, using of this instrument was minimized and remained only in modal windows. So was accepted the decision of removing Bootstrap.</li><li>Was implemented critical styles.</li><li>Rewrote the architecture of styles in the way when on the page are connected just styles that are needed.</li><li>Replaced the <img> tag with <picture> in places where a large photo could potentially be placed.</li></ol><p>In the fall of 2023, the site made redesigned and I also took part. Most of the pages were taken with new visuals, but some of the components were changed functionally.</p><p>I have created the next pages:</p><ul><li><a href='https://www.atbmarket.com/cabinet'>My account</a></li><li><a href='https://www.atbmarket.com/career'>Vacancies</a></li><li><a href='https://www.atbmarket.com/advertisement'>Advertisers</a></li><li><a href='https://www.atbmarket.com/rent/special'>Realty</a></li><li><a href='https://www.atbmarket.com/tenders'>Tenders</a></li><li><a href='https://www.atbmarket.com/store-map'>Stores</a></li><li><a href='https://www.atbmarket.com/garanty'>Guarantee of freshness</a></li><li><a href='https://www.atbmarket.com/kartka-atb'>The card ATB</a></li><li><a href='https://www.atbmarket.com/about'>About</a></li><li><a href='https://www.atbmarket.com/delivery'>Payment and delivery</a></li></ul><p>In addition, it was necessary to change the logic of the modal window, where the user chooses delivery or pickup from the store and has the opportunity to select the address of the store on the map and enter his address. It was created using the integration Visicom API that allows to validation user's address and shows the nearest stores.</p>"
     },
     {
       "id": "qanabi",
       "name": "Qanabi",
-      "description": "European brand of cannabis-based products",
+      "description": "The European brand of cannabis-based goods",
       "img": "img/qanabi.png",
       "link": "https://qanabi.com/",
-      "text": "The site is based on the WordPress CMS system. It integrates the Plektan CRM system (for realtors) via the REST API. Vue components are used for integration. This makes it easy to filter offices. The WP REST API is also used, which made it possible to implement filters and post pages."
+      "text": "<p>I have taken part in developing the site from start to release when I worked at Sun Agency (Kyiv).</p><p>The backend of the site is created using the Yii PHP Framework.</p><p>For development, these technologies were used: HTML, PostCSS, JavaScript, REST API, and gulp.</p><p>I created most of the pages and components. During development, I followed by all the rules of the BEM methodology. In addition, I complied with the rules of functional programming.</p><p>For creating this website were used the next libraries were:</p><ul><li>GSAP – GreenSock – for animation text and pictures</li><li>Select2 – for changing native styles and behavior of tag <select></li><li>IMask.js – for creating country code mask for tag <input> with type tel that it helps the user to enter his phone number correctly</li><li>Swiper – for creating sliders.</li></ul><p>There were implemented critical styles for decreasing first screen loading time.  Furthermore, the style architecture was created in a way that the styles are connected to just the page that is needed. As well, in the places where it can be used, the big picture used tag <picture> instead of <img>. There was used the technology of lazy load when the elements are loaded gradually the user comes to it. All these steps help decrease site loading time.</p>"
     },
     {
       "id": "meplace",
       "name": "MePlace",
-      "description": "A modern site for a kindergarten in Britain",
+      "description": "The website of modern child garden in London ",
       "img": "img/meplace.png",
       "link": "https://meplace.co/",
-      "text": "This is an online catalog with an example of customer work. Made according to the designer's specifications. It is based on the WordPress CMS system. Implemented static pages, product record pages, as well as a product catalog. The site is adapted for mobile devices."
+      "text": "<p>When I worked at The First The Last Agency (Kyiv), I took part in developing this site.</p><p>The main feature of this site is a lot of animation, which is made using the library GSAP – GreenSock. Almost all content on the website has dynamic animation. It looks quite pretty. However, it’s an additional issue for developers, as the scripts of animation work on the client side, and it decreases the performance of the site. We implemented all instruments for optimization and solved this problem. It was used lazy load technology when the elements load step by step as the user reaches it. It helped improve site performance.</p><p>I created part of the components and pages. During developing site styles, I complied with the rules of BEM.</p><p>Used the next technologies: HTML, SCSS, JavaScript, REST API, webpack.</p>"
     },
     {
       "id": "esit",
       "name": "Esit Ukraine",
-      "description": "Official distributor of weighing equipment",
+      "description": "Online store of strain gauge products from the official distributor of the Esit company in Ukraine",
       "img": "img/esit.png",
       "link": "https://esit.com.ua/",
-      "text": "The site is a full-fledged online store and is based on the WordPress CMS system. It has developed static pages, a product catalog, a product card, a shopping cart and ordering. The site is adapted for mobile devices."
+      "text": "<p>The website was created when I worked at Consult.marketing agency (Brovary, Ukraine).</p><p>This is a full-fledged online store, which is based on CMS WordPress. There are developed static pages, product catalogs, product pages, carts, and checkout.</p><p>For implementation, issues that were set by the customer have used plugins such as Elementor, Woocommerce, Advanced custom fields, WC Ukraine Shipping, etc.</p><p>During the development, I followed all rules of BEM methodology for styles. The website is completely adaptive for mobile devices.</p>"
     },
     {
       "id": "vagovi",
-      "name": "Весовые решения",
-      "description": "Weighing equipment manufacturer",
+      "name": "Вагові рішення",
+      "description": "Manufacturer of weighing equipment",
       "img": "img/vagovi.png",
       "link": "https://vagovi.com.ua",
-      "text": "The site is an online catalog of goods for customers. It is based on the Opencart CMS system. Implemented static pages, product catalog and product card. The site is adapted for mobile devices."
+      "text": "<p>The website I realized absolutely myself when I worked at Consult.marketing agency (Brovary, Ukraine).</p><p>It is the online catalog of products for clients, who needed vehicle scales, railway scales, animal scales, and scales used in industrial facilities.</p><p>The site is based on CMS WordPress. There were created static pages, product catalogs, and product pages.</p><p>For creating were used such plugins as Elementor, Woocommerce, Advanced custom fields, Contact Form 7, etc.</p><p>During the development, I followed all rules of BEM methodology for styles. The website is completely adaptive for mobile devices.</p>"
     },
     {
       "id": "montreal",
@@ -191,23 +226,23 @@
       "description": "Real estate agency of elite real estate",
       "img": "img/montreal.png",
       "link": "https://montreal.klymas.com/",
-      "text": "The site is based on the WordPress CMS system. It integrates the Plektan CRM system (for realtors) via the REST API. Vue components are used for integration. This makes it easy to filter offices. The WP REST API is also used, which made it possible to implement filters and post pages."
+      "text": "<p>The website was developed during my work at Consult.marketing agency (Brovary, Ukraine).</p><p>The main purpose of the site is to show all available options for commerce estate from modern business centers to the historical center of the city. Most of the objects are for rent although there are a few objects for sale.</p><p>It is based on CMS WordPress.</p><p>As the customer has been using CRM Plektan where he collected all his real estate ads, so there was necessary to implement the API of the CRM. It was done successfully using the Vue framework and implementing Vue components.</p><p>Furthermore, there was needed to realize the posts filter so there has used WP REST API, which gave us the ability to get post information in the response on the server and show a filtered list.</p><p>There were used plugins such as Elementor, Woocommerce, Advanced custom fields, Polylang, Contact Form 7, etc.</p><p>During the development, I followed all rules of BEM methodology for styles. The website is completely adaptive for mobile devices.</p>"
     },
     {
       "id": "expo",
       "name": "Expo Solution",
-      "description": "Manufacturer of exhibition and trade equipment",
+      "description": "Manufacturer of exhibition and trade equipment ",
       "img": "img/expo.png",
       "link": "https://www.expo-solution.com/",
-      "text": "This is an online catalog with an example of customer work. Made according to the designer's specifications. It is based on the WordPress CMS system. Implemented static pages, product record pages, as well as a product catalog. The site is adapted for mobile devices."
+      "text": "<p>The website was developed during my work at Consult.marketing agency (Brovary, Ukraine).</p><p>This is online catalog of company, which manufacture exhibition materials and trade equipment, from the smallest to those that require large exhibition areas.</p><p>The site is based on CMS WordPress. There were created static pages, product catalogs, and product pages.</p><p>For creating were used such plugins as Elementor, Woocommerce, Advanced custom fields, Contact Form 7, etc. </p><p>During the development, I followed all rules of BEM methodology for styles. The website is completely adaptive for mobile devices.</p>"
     },
     {
-      "id": "cabelshop",
-      "name": "Cabel shop",
-      "description": "Manufacturer of exhibition and trade equipment",
-      "img": "img/cableshop.png",
-      "link": "https://cable-shop.com.ua/",
-      "text": "This is an online catalog with an example of customer work. Made according to the designer's specifications. It is based on the WordPress CMS system. Implemented static pages, product record pages, as well as a product catalog. The site is adapted for mobile devices."
+      "id": "eco",
+      "name": "Eco Solution",
+      "description": "A company for the processing of secondary raw materials in the city of Dnipro",
+      "img": "img/eco.png",
+      "link": "https://eco-solution.com.ua/",
+      "text": "<p>The website I realized absolutely myself when I worked at Consult.marketing agency (Brovary, Ukraine).</p><p>This is the business card site of the company, which is engaged in the processing of secondary raw materials in the city of Dnipro (Ukraine).</p><p>The site is based on CMS WordPress. There were created static pages, product catalogs, and product pages.</p><p>For creating were used such plugins as Elementor, Woocommerce, Advanced custom fields, Contact Form 7, etc. </p><p>During the development, I followed all rules of BEM methodology for styles. The website is completely adaptive for mobile devices.</p>"
     }
   ]
 }

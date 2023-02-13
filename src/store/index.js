@@ -45,7 +45,10 @@ export default new Vuex.Store({
         "Repository hosting service": function (el) {
           return el.category === "hosting";
         },
-        "Plugins JS": function (el) {
+        "Interface design software": function (el) {
+          return el.category === "design";
+        },
+        "Addition": function (el) {
           return el.category === "plugin";
         }
       }
