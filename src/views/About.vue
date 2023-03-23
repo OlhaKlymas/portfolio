@@ -5,7 +5,7 @@
       <div class="about__wrap">
         <div class="about__text">
           <h2 class="about__title">Olha Klymas</h2>
-          <p>Engaged in development: more than {{ Math.floor((this.date - this.start) / (24 * 3600 * 365.25 * 1000)) }} years</p>
+          <p>Engaged in development: {{ Math.floor((this.date - this.start) / (24 * 3600 * 365.25 * 1000)) }} years</p>
           <div class="about__photo">
             <img src="@/assets/img/myphoto.png" alt="Olha Klymas">
           </div>
@@ -17,8 +17,8 @@
             <p>Link to Portfolio code: <a href="https://github.com/OlhaKlymas/portfolio" class="about__link" target="_blank">https://github.com/OlhaKlymas/portfolio</a></p>
             <p class="about__wage">Desired salary:
               <span class="about__wage-wrap" :class="amount && 'about__wage--amount'"> 
-                <span>about {{amount || wage}}</span>
-                <span v-if="amount" class="about__select-wrap">
+                <span>{{amount || wage}}</span>
+                <span v-if="CURRENCY && Object.keys(CURRENCY).length !== 0" class="about__select-wrap">
                   <select class="about__select" @change="onChange($event)">
                     <option
                         class="about__select-option"
@@ -58,9 +58,9 @@ export default {
   name: "About",
   data:() => ({
     date: new Date(),
-    start: new Date(2018, 6, 1),
-    currencies: ['CAD', 'USD', 'EUR'],
-    wage: 30,
+    start: new Date(2018, 2, 1),
+    currencies: ['USD', 'CAD', 'EUR'],
+    wage: 25,
     amount: null
   }),
   components:{Loader, Error},

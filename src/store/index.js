@@ -148,7 +148,7 @@ export default new Vuex.Store({
     GET_CURRENCY_FROM_API({commit}){
       commit("SET_IS_LOADED", true)
       const key = process.env.VUE_APP_FIXER
-      return axios(`https://api.apilayer.com/fixer/latest?base=CAD&symbols=USD,EUR,CAD&apikey=${key}`, {
+      return axios(`https://api.apilayer.com/fixer/latest?base=USD&symbols=USD,EUR,CAD&apikey=${key}`, {
         method: "GET"
       }).then((currency)=>{
         commit("SET_CURRENCY_TO_STATE", currency.data);
